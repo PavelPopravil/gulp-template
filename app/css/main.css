@@ -1,0 +1,165 @@
+/* CONNECT GOOGLE FONTS */
+/* CONNECT LOCAL FONTS */
+@font-face {
+  font-family: RobotoLight;
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RobotoLight;
+    src: url("../fonts/RobotoLight/RobotoLight.svg#RobotoLight") format("svg"); } }
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff2") format("woff2"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype"), url("../fonts/RobotoMedium/RobotoMedium.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RobotoMedium;
+    src: url("../fonts/RobotoMedium/RobotoMedium.svg#RobotoMedium") format("svg"); } }
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RobotoRegular;
+    src: url("../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular") format("svg"); } }
+
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot") format("embedded-opentype"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff2") format("woff2"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype"), url("../fonts/ProximaNovaBold/ProximaNovaBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: ProximaNovaBold;
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.svg#ProximaNovaBold") format("svg"); } }
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot");
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot") format("embedded-opentype"), url("../fonts/MontserratRegular/MontserratRegular.woff2") format("woff2"), url("../fonts/MontserratRegular/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular/MontserratRegular.ttf") format("truetype"), url("../fonts/MontserratRegular/MontserratRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: MontserratRegular;
+    src: url("../fonts/MontserratRegular/MontserratRegular.svg#MontserratRegular") format("svg"); } }
+
+@font-face {
+  font-family: MerriweatherLight;
+  src: url("../fonts/MerriweatherLight/MerriweatherLight.eot");
+  src: url("../fonts/MerriweatherLight/MerriweatherLight.eot") format("embedded-opentype"), url("../fonts/MerriweatherLight/MerriweatherLight.woff2") format("woff2"), url("../fonts/MerriweatherLight/MerriweatherLight.woff") format("woff"), url("../fonts/MerriweatherLight/MerriweatherLight.ttf") format("truetype"), url("../fonts/MerriweatherLight/MerriweatherLight.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: MerriweatherLight;
+    src: url("../fonts/MerriweatherLight/MerriweatherLight.svg#MerriweatherLight") format("svg"); } }
+
+html {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%; }
+
+body {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* VERTICAL RYTHM */
+  /* SMOOTH FONT */
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+body.onload {
+  overflow: hidden; }
+
+button, select {
+  -webkit-appearance: none; }
+
+/* SELECT TEXT */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease; }
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+/* System */
+.np {
+  padding: 0; }
+
+/* no padding */
+.np-l {
+  padding-left: 0; }
+
+/* no padding left */
+.np-r {
+  padding-right: 0; }
+
+/* no padding right */
+.dp {
+  padding: 0 30px; }
+
+/* double padding */
+.nm {
+  margin: 0; }
+
+/* no margin */
+.nm-b {
+  margin-bottom: 0; }
+
+/* no margin bottom */
+.p_small {
+  padding: 5px; }
+
+/* BASE RESET */
+.navbar-default .navbar-toggle {
+  border: none; }
+
+/* HAPPY BROWSER */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* fonts */
+/*width */
+/* colors */
