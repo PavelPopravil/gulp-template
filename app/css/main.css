@@ -160,20 +160,3 @@ textarea {
   background: #ccc;
   color: #000;
   padding: 0.2em 0; }
-
-/* fonts */
-/*width */
-/* colors */
-body {
-  border: 1px solid green;
-  color: red;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  -webkit-box-shadow: 0 2px 0 rgba(255, 0, 0, 0.5);
-  box-shadow: 0 2px 0 rgba(255, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #eee;
-  font-size: 20px; }
