@@ -1,3 +1,5 @@
+@import 'sprite';
+// @import 'templates/sprite_template';
 /* VARIABLES */
 
 // fonts
@@ -35,11 +37,6 @@ $main-color: ;
 
 // CONNECT LOCAL FONTS
 @include font-face(RobotoLight, 'RobotoLight');
-@include font-face(RobotoMedium, 'RobotoMedium');
-@include font-face(RobotoRegular, 'RobotoRegular');
-@include font-face(ProximaNovaBold, 'ProximaNovaBold');
-@include font-face(MontserratRegular, 'MontserratRegular');
-@include font-face(MerriweatherLight, 'MerriweatherLight');
 
 // USE THIS MIXIN
 @mixin font-type($color, $font-family, $font-size, $line-height, $letter-spacing) {
