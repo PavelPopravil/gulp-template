@@ -1,17 +1,16 @@
 
 
-@import 'bower_components/reset-css/_reset';
-@import 'bower_components/font-awesome/css/font-awesome';
+@import 'bower_components/normalize-css/normalize';
 
-// Bootstrap grid improts
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables';
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+// Bootstrap-sass grid imports
+// @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+// @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
 
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid';
+// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+// @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid';
 
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities';
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+// @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities';
+// @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
 
 // owl-carousel
 @import 'bower_components/owl.carousel/dist/assets/owl.carousel';

@@ -1,12 +1,18 @@
 {
-  "name": "project8g",
-  "description": "shop",
+  "name": "gulp-template",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PavelPopravil",
+  "license": "ISC",
+  "devDependencies": {},
+  "homepage": "https://github.com/PavelPopravil/gulp-template",
   "authors": [
     "PavelPopravil <pasukmc@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,9 +22,8 @@
   ],
   "dependencies": {
     "jquery": "^3.1.1",
-    "owl.carousel": "latest",
-    "bootstrap-sass": "latest",
-    "reset-css": "^2.2.0",
-    "font-awesome": "fontawesome#^4.7.0"
+    "bootstrap-sass": "*",
+    "normalize-css": "normalize.css#^5.0.0",
+    "owl.carousel": "*"
   }
 }
