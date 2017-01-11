@@ -12,7 +12,8 @@ var gulp = require('gulp'),
     svgmin = require('gulp-svgmin'),
     cheerio = require('gulp-cheerio'),
     replace = require('gulp-replace'),
-    pngquant = require('imagemin-pngquant');
+    pngquant = require('imagemin-pngquant'),
+    babel = require("gulp-babel");
     
 
 
@@ -66,12 +67,23 @@ gulp.task('scripts:libs', function() {
     .pipe(gulp.dest('app/js'));
 });
 
+// babel
+gulp.task('babel', function() {
+  return gulp.src('app/js/es6/main.js')
+    .pipe(babel({
+       presets: ['es2015']
+    }))
+    .pipe(gulp.dest('app/js'))
+    .pipe(browserSync.stream())
+});
+
 // Scripts min
-gulp.task('scripts', ['scripts:base', 'scripts:libs'], function() {
+gulp.task('scripts', ['babel', 'scripts:base', 'scripts:libs'], function() {
   gulp.src('app/js/main.js')
     .pipe(uglify('main.min.js'))
     .pipe(gulp.dest('app/js'))
 });
+
 
 // svg-sprites
 gulp.task('svgSpriteBuild', function () {
@@ -114,9 +126,9 @@ gulp.task('svgSpriteBuild', function () {
 gulp.task('watch', ['browser-sync', 'minify', 'scripts', 'svgSpriteBuild'], function () {
   gulp.watch('app/sass/**/*.scss', ['minify']);
   gulp.watch("app/*.html", browserSync.reload);
-  gulp.watch("app/img/**/*", browserSync.reload);
+  gulp.watch("app/img/icons_svg/*.svg", ['svgSpriteBuild'], browserSync.reload);
+  gulp.watch("app/js/es6/*.js", ['scripts']);
   gulp.watch("app/js/*.js", browserSync.reload);
-  gulp.watch("app/js/main.js", ['scripts']);
 });
 
 
@@ -142,6 +154,7 @@ gulp.task('clean', ['copy'], function() {
     'dist/sass',
     'dist/css/*.css',
     '!dist/css/*.min.css',
+    'dist/js/es6',
     'dist/js/*.js',
     '!dist/js/*.min.js'
     ])

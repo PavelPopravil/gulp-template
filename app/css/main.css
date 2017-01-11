@@ -4,10 +4,6 @@
   height: 1em;
   fill: currentColor; }
 
-.icon-dribble__icon {
-  font-size: 3.75rem;
-  width: 1em; }
-
 .icon-facebook__icon {
   font-size: 3.75rem;
   width: 1em; }
@@ -16,44 +12,14 @@
   font-size: 3.75rem;
   width: 1em; }
 
-.icon-instagram__icon {
-  font-size: 3.75rem;
-  width: 1em; }
-
-.icon-mail__icon {
-  font-size: 1.5rem;
-  width: 1.5em; }
-
-.icon-phone__icon {
-  font-size: 1.75rem;
-  width: 1em; }
-
-.icon-services__bulb {
-  font-size: 7rem;
-  width: 0.85714em; }
-
-.icon-services__cloud-small {
-  font-size: 4.5rem;
-  width: 1.05556em; }
-
-.icon-twiter__icon {
-  font-size: 3.75rem;
-  width: 1em; }
-
 /* VARIABLES */
 /* CONNECT GOOGLE FONTS */
 /* CONNECT LOCAL FONTS */
 @font-face {
   font-family: RobotoLight;
-  src: url("../fonts/RobotoLight/RobotoLight.eot");
-  src: url("../fonts/RobotoLight/RobotoLight.eot") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#TTDrugsThin") format("svg");
+  src: url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: RobotoLight;
-    src: url("../fonts/RobotoLight/RobotoLight.svg#RobotoLight") format("svg"); } }
 
 html {
   /* height hack */
@@ -142,8 +108,3 @@ textarea {
   background: #ccc;
   color: #000;
   padding: 0.2em 0; }
-
-.app__icon {
-  fill: green;
-  width: 30px;
-  height: 30px; }

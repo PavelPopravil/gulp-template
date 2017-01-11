@@ -1,5 +1,4 @@
 @import 'sprite';
-// @import 'templates/sprite_template';
 /* VARIABLES */
 
 // fonts
@@ -15,28 +14,17 @@ $main-color: ;
 	// CONVERTOR: http://everythingfonts.com/font-face
   	@font-face {
 		font-family: $font-family;
-		src: url('../fonts/' + $file-path + '/' + $file-path + '.eot');
-		src: url('../fonts/' + $file-path + '/' + $file-path + '.eot') format('embedded-opentype'),
-			 url('../fonts/' + $file-path + '/' + $file-path + '.woff2') format('woff2'),
-			 url('../fonts/' + $file-path + '/' + $file-path + '.woff') format('woff'),
-			 url('../fonts/' + $file-path + '/' + $file-path + '.ttf') format('truetype'),
-			 url('../fonts/' + $file-path + '/' + $file-path + '.svg#TTDrugsThin') format('svg');      
+
+		src: url('../fonts/' + $file-path + '/' + $file-path + '.woff2') format('woff2'),
+			 url('../fonts/' + $file-path + '/' + $file-path + '.woff') format('woff');      
 		   
 		font-weight: normal;
 		font-style: normal;
 	}
-  
-	// Chrome Windows HACK: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
-	@media screen and (-webkit-min-device-pixel-ratio: 0) {
-		@font-face {
-			font-family: $font-family;
-			src: url('../fonts/' + $file-path + '/' + $file-path + '.svg##{$font-family}') format('svg');
-		}
-	}
 }
 
 // CONNECT LOCAL FONTS
-@include font-face(RobotoLight, 'RobotoLight');
+@include font-face(RobotoLight, 'RobotoLight'); 
 
 // USE THIS MIXIN
 @mixin font-type($color, $font-family, $font-size, $line-height, $letter-spacing) {
