@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglifyjs'),
+    uglify = require('gulp-uglify'),
     cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
     del = require('del'),
@@ -60,7 +60,6 @@ gulp.task('scripts:base', function() {
 // Scripts libs
 gulp.task('scripts:libs', function() {
   return gulp.src([
-    'bower_components/owl.carousel/dist/owl.carousel.min.js',
     'bower_components/svg4everybody/dist/svg4everybody.min.js'
     ])
     .pipe(concat('libs.min.js'))
@@ -79,8 +78,9 @@ gulp.task('babel', function() {
 
 // Scripts min
 gulp.task('scripts', ['babel', 'scripts:base', 'scripts:libs'], function() {
-  gulp.src('app/js/main.js')
-    .pipe(uglify('main.min.js'))
+    gulp.src(['app/js/*.js', '!app/js/*.min.js'])
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/js'))
 });
 
